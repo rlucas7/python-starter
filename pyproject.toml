@@ -3,7 +3,7 @@
 
 [project]
 
-name = "collections2"
+name = "python-starter"
 description = "An example package demonstrating how to make one"
 
 readme = "README.md"
