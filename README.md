@@ -1,5 +1,6 @@
-# collections2
-A simple package to test out the release notes from drafter github action 
+# python-starter
+A simple package to demonstrate setup of automated release to a google cloud
+artifact registry via github tags.
 
 
 # editable install
