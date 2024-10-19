@@ -39,6 +39,8 @@ jobs:
           gcloud config set account github-action-pusher@my-project-1948-436821.iam.gserviceaccount.com
           gcloud auth activate-service-account github-action-pusher@my-project-1948-436821.iam.gserviceaccount.com --key-file=$GOOGLE_APPLICATION_CREDENTIALS --project=my-project-1948-436821
           gcloud artifacts print-settings python | head -n 8 > ~/.pypirc
+          echo "username: _json_key_base64
+          password: ${{ secrets.SA_KEY_BASE64 }}" >> ~/.pypirc"
           cat ~/.pypirc
                                                                                    
       - name: Register package                                                     
