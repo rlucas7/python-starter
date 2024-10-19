@@ -1,4 +1,4 @@
-from collections2.add import add
+from python_starter.add import add
 
 import pytest
 
