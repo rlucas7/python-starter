@@ -48,4 +48,4 @@ jobs:
           
       - name: Register package                                                     
         run: |                                                                     
-          twine upload -r --repository-url https://us-central1-python.pkg.dev/my-project-1948-436821/privatepythonpackages/ dist/*               
+          twine upload --repository-url https://us-central1-python.pkg.dev/my-project-1948-436821/privatepythonpackages/ dist/*               
