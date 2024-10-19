@@ -7,3 +7,8 @@ Try a little more...
 def add(x, y):
     """Compute the sum of two numbers."""
     return x + y
+
+
+def multiply(x, y):
+    """Compute the sum of two numbers."""
+    return x * y
