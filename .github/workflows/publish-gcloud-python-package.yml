@@ -40,7 +40,8 @@ jobs:
           gcloud auth activate-service-account github-action-pusher@my-project-1948-436821.iam.gserviceaccount.com --key-file=$GOOGLE_APPLICATION_CREDENTIALS --project=my-project-1948-436821
           gcloud artifacts print-settings python | head -n 8 > ~/.pypirc
           cat ~/.pypirc
-                                                                                   
+          gcloud artifacts print-settings python | tail -n 3 > ~/pip.conf
+                                                                                  
       - name: Register package                                                     
         run: |                                                                     
           twine upload -r ${{ secrets.REPOSITORY }} dist/*               
