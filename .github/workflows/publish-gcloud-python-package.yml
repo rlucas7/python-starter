@@ -41,7 +41,8 @@ jobs:
           gcloud artifacts print-settings python | head -n 8 > ~/.pypirc
           cat ~/.pypirc
           gcloud artifacts print-settings python | tail -n 3 > ~/pip.conf
-                                                                                  
+          cat ~/pip.conf
+          
       - name: Register package                                                     
         run: |                                                                     
           twine upload -r ${{ secrets.REPOSITORY }} dist/*               
