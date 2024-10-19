@@ -39,12 +39,8 @@ jobs:
           gcloud config set account github-action-pusher@my-project-1948-436821.iam.gserviceaccount.com
           gcloud auth activate-service-account github-action-pusher@my-project-1948-436821.iam.gserviceaccount.com --key-file=$GOOGLE_APPLICATION_CREDENTIALS --project=my-project-1948-436821
           gcloud artifacts print-settings python | head -n 8 > ~/.pypirc
-          cat ~/.pypirc
-          pip3.11 config -v list
           gcloud artifacts print-settings python | tail -n 3 > ~/pip.conf
           export PIP_CONFIG_FILE=~/pip.conf
-          pip3.11 config -v list
-          cat ~/pip.conf
           
       - name: Register package                                                     
         run: |                                                                     
